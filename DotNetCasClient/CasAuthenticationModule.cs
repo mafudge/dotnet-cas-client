@@ -75,6 +75,9 @@ namespace DotNetCasClient
             HttpContext context = HttpContext.Current;
             HttpRequest request = context.Request;
 
+            //mafudge 
+            if (!request.CurrentExecutionFilePath.Contains("/app/casauth")) return;
+
             logger.Debug("Starting BeginRequest for " + request.RawUrl);
             
             // Cleanup expired ServiceTickets in the ServiceTicketManager
@@ -130,6 +133,10 @@ namespace DotNetCasClient
             HttpContext context = HttpContext.Current;
             HttpRequest request = context.Request;
 
+            //mafudge 
+            if (!request.CurrentExecutionFilePath.Contains("/app/casauth")) return;
+
+
             // Validate the ticket coming back from the CAS server
             if (!RequestEvaluator.GetRequestIsAppropriateForCasAuthentication())
             {
@@ -180,6 +187,10 @@ namespace DotNetCasClient
         {
             HttpContext context = HttpContext.Current;
             HttpRequest request = context.Request;
+
+            //mafudge 
+            if (!request.CurrentExecutionFilePath.Contains("/app/casauth")) return;
+
 
             if (RequestEvaluator.GetRequestIsAppropriateForCasAuthentication())
             {

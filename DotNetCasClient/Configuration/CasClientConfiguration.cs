@@ -79,6 +79,7 @@ namespace DotNetCasClient.Configuration
 
         // Names for the supported Cache Ticket state provider
         public const string CACHE_PROXY_TICKET_MANAGER = "CacheProxyTicketManager";
+
         #endregion
 
         #region Properties

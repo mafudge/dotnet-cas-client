@@ -60,6 +60,8 @@ namespace DotNetCasClient.State
         /// <param name="proxyGrantingTicket">used as the value</param>
         public void InsertProxyGrantingTicketMapping(string proxyGrantingTicketIou, string proxyGrantingTicket)
         {
+            //mafudge
+            if (String.IsNullOrEmpty(proxyGrantingTicket)) proxyGrantingTicket = "";
             HttpContext.Current.Cache.Insert(proxyGrantingTicketIou, proxyGrantingTicket, null, DateTime.Now.Add(DefaultExpiration), Cache.NoSlidingExpiration);
         }
 
