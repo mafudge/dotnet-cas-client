@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <p>Welcome @User.Identity.Name </p>
+    <p>
+        @foreach (var item in Request.Cookies)
+        {
+        Response.Write(item + "<br>");
+        }
+
+    </p>
+    <p><a href="../app/home/casauth">Pass Cas Auth to App...</a></p>
+</div>

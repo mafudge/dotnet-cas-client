@@ -1,32 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCasClient", "DotNetCasClient\DotNetCasClient.csproj", "{883A296E-C898-4D1F-9ED9-DE7569DEFB3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCasProxyDemoApp", "DotNetCasProxyDemoApp\DotNetCasProxyDemoApp.csproj", "{C8D6000A-13EC-4F2E-8FCD-AC7806F5BD4C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebSite", "SampleWebSite\SampleWebSite.csproj", "{B1A6C45E-474D-42FE-92C7-F209F0C40858}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ExampleWebSite", "ExampleWebSite\", "{B8318264-E0D2-4873-87DA-A631E67FEEA3}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
-		Debug.AspNetCompiler.VirtualPath = "/ExampleWebSite"
-		Debug.AspNetCompiler.PhysicalPath = "ExampleWebSite\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ExampleWebSite\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/ExampleWebSite"
-		Release.AspNetCompiler.PhysicalPath = "ExampleWebSite\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ExampleWebSite\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "6372"
-		VWDDynamicPort = "false"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cas", "Cas\Cas.csproj", "{C1073C2C-31C4-4C35-AD80-E247FA6CD9FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +31,14 @@ Global
 		{B1A6C45E-474D-42FE-92C7-F209F0C40858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1A6C45E-474D-42FE-92C7-F209F0C40858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1A6C45E-474D-42FE-92C7-F209F0C40858}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8318264-E0D2-4873-87DA-A631E67FEEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8318264-E0D2-4873-87DA-A631E67FEEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8318264-E0D2-4873-87DA-A631E67FEEA3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8318264-E0D2-4873-87DA-A631E67FEEA3}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C1073C2C-31C4-4C35-AD80-E247FA6CD9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1073C2C-31C4-4C35-AD80-E247FA6CD9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1073C2C-31C4-4C35-AD80-E247FA6CD9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1073C2C-31C4-4C35-AD80-E247FA6CD9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
