@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DotNetCasClient;
+using System.Web.Security;
 
 namespace App.Controllers
 {
@@ -30,6 +32,12 @@ namespace App.Controllers
         public ActionResult CasAuth()
         {
             if (!Request.IsAuthenticated) return RedirectToRoute("Home");
+
+            HttpCookie ticketCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+            if (ticketCookie != null && !String.IsNullOrEmpty(ticketCookie.Value))
+            {
+                FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(ticketCookie.Value);
+            }
             return View();
             
         }

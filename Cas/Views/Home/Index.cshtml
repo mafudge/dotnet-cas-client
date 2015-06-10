@@ -1,17 +1,27 @@
-﻿
+﻿@using CasAssertionModel
+@model  CasAuthTicket
+
 @{
     ViewBag.Title = "Index";
+    var ticket = Newtonsoft.Json.JsonConvert.SerializeObject(Model);
+    var encryptedTicket = ticket;
+    var encodedTicket = Server.UrlEncode(ticket);
 }
 
 <h2>Index</h2>
 <div>
-    <p>Welcome @User.Identity.Name </p>
-    <p>
+    <p>AUTHENTICATED: @User.Identity.Name </p>
+    <p>COOKIES: <br />
         @foreach (var item in Request.Cookies)
         {
-        Response.Write(item + "<br>");
+        @item  <br>
         }
-
     </p>
-    <p><a href="../app/home/casauth">Pass Cas Auth to App...</a></p>
+    <p>AUTH TICKET: <code>
+    @ticket
+    </code> </p>
+    <p>ENCRYPTED TICKET: <code>
+        @encryptedTicket
+        </code></p>
+    <p><a href="../app/home/casauth?ticket=@encodedTicket">Pass Cas Auth to App...</a></p>
 </div>

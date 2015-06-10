@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cas", "Cas\Cas.csproj", "{C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasAssertionModel", "CasAssertionModel\CasAssertionModel.csproj", "{0D6CA749-E999-4731-943E-20D260DE66AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A86338A6-65A6-46B3-B5D9-732FB2A6D6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6CA749-E999-4731-943E-20D260DE66AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6CA749-E999-4731-943E-20D260DE66AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6CA749-E999-4731-943E-20D260DE66AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6CA749-E999-4731-943E-20D260DE66AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
