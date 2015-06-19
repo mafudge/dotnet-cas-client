@@ -238,9 +238,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DotNetCasClient\DotNetCasClient.csproj">
-      <Project>{883a296e-c898-4d1f-9ed9-de7569defb3d}</Project>
-      <Name>DotNetCasClient</Name>
+    <ProjectReference Include="..\CasAssertionModel\CasAssertionModel.csproj">
+      <Project>{0d6ca749-e999-4731-943e-20d260de66ad}</Project>
+      <Name>CasAssertionModel</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

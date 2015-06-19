@@ -3,9 +3,8 @@
 
 @{
     ViewBag.Title = "Index";
-    var ticket = Newtonsoft.Json.JsonConvert.SerializeObject(Model);
-    var encryptedTicket = ticket;
-    var encodedTicket = Server.UrlEncode(ticket);
+    var ticket = Model.toJSON();
+    var encodedTicket = Model.toBase64();
 }
 
 <h2>Index</h2>
@@ -20,8 +19,8 @@
     <p>AUTH TICKET: <code>
     @ticket
     </code> </p>
-    <p>ENCRYPTED TICKET: <code>
-        @encryptedTicket
+    <p>BASE64 ENCODED TICKET: <code>
+        @encodedTicket
         </code></p>
     <p><a href="../app/home/casauth?ticket=@encodedTicket">Pass Cas Auth to App...</a></p>
 </div>

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using DotNetCasClient;
 using System.Web.Security;
+using CasAssertionModel;
+
 
 namespace App.Controllers
 {
@@ -37,7 +38,11 @@ namespace App.Controllers
             if (ticketCookie != null && !String.IsNullOrEmpty(ticketCookie.Value))
             {
                 FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(ticketCookie.Value);
+                string base64String = Request.QueryString["ticket"];
+                CasAuthTicket casAuthTicket = new CasAuthTicket().fromBase64(base64String);                
             }
+
+            // TODO: Make view
             return View();
             
         }
